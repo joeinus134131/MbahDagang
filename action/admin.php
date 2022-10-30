@@ -17,7 +17,7 @@ $result = mysqli_query($conn, 'SELECT * FROM barang');
     <h1>Dashboard Admin Data</h1>
     <nav class="navbar navbar-expand-lg bg-light">
         <ul>
-            <li class="nav-item"><a href="http://localhost/madeagusandigunawan/index.php">Home</a></li>
+            <li class="nav-item"><a href="http://localhost/MbahDagang/index.php">Home</a></li>
             <li class="nav-item"><a href="#">Kontak</a></li>
             <li class="nav-item"><a href="#">Tentang</a></li>
             <li class="nav-item"><a href="#">Cari</a></li>
