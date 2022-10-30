@@ -1,0 +1,1 @@
+INSERT INTO `suplier`(`id_suplier`, `nama`, `alamat`, `kota`, `telepon`) VALUES ('SP03','Indocraft','Jl.Raya Mas No.47','Bali','0361-973091')

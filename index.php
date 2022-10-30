@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>git
 	<link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <body>
@@ -22,10 +22,7 @@
 						$data  = mysqli_query($conn, "SELECT * FROM barang");
 					}
 				?>
-				<button onclick="valueGw()">
-					<!--<a href="login.php">Masuk Admin</a>-->
-					Masuk Admin
-				</button>
+				<a href="login.php">Masuk Admin</a>
 				<div class="table-responsive">
 					<table class="table">
 						<thead class="thead-dark">
@@ -60,6 +57,5 @@
 			<div class="col-md-2"></div>	
 		</div>
 	</div> 
-	<script src="/MbahDagang/script.js"></script>
 </body>
 </html>
