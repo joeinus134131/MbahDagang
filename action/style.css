@@ -11,12 +11,16 @@
     background: red;
   }
 body {
-    font-size: 25px;
+    font-size: 30px;
     color: #343d44;
     font-family: "segoe-ui", "open-sans", tahoma, arial;
-    padding: 0;
-    margin: 0;
+    padding: 50px;
+    margin: 50px;
     }
+div {
+  padding: 50px;
+  margin: 50px;
+}
 table {
     border: #353535;
     margin: auto;
