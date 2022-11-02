@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 01 Nov 2022 pada 23.09
+-- Waktu pembuatan: 02 Nov 2022 pada 21.01
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.0.13
 
@@ -18,29 +18,32 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_siswa`
+-- Database: `toko_indonesia`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `siswa`
+-- Struktur dari tabel `suplier`
 --
 
-CREATE TABLE `siswa` (
-  `id_siswa` int(10) NOT NULL,
-  `nama` varchar(100) NOT NULL,
-  `alamat` varchar(100) NOT NULL,
-  `no_hp` varchar(100) NOT NULL
+CREATE TABLE `suplier` (
+  `id_suplier` varchar(10) NOT NULL,
+  `nama` text NOT NULL,
+  `alamat` varchar(30) NOT NULL,
+  `kota` text NOT NULL,
+  `telepon` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `siswa`
+-- Dumping data untuk tabel `suplier`
 --
 
-INSERT INTO `siswa` (`id_siswa`, `nama`, `alamat`, `no_hp`) VALUES
-(0, 'Made Agus', 'Lampung, Indonesia', '083802436288'),
-(1, 'Made Agus', 'Lampung, Indonesia', '083802436288');
+INSERT INTO `suplier` (`id_suplier`, `nama`, `alamat`, `kota`, `telepon`) VALUES
+('SP01', 'PD Idola Snack', 'Jl.Kud-Sukadami', 'Bekasi', '085693725494'),
+('SP02', 'Herborist', 'Jl.Daan Mogot Km.11', 'Jakarta', '021-54368111'),
+('SP03', 'Indocraft', 'Jl.Raya Mas No.47', 'Bali', '0361-973091'),
+('SP04', 'Onecraft', 'Jl.Soreang Indah 1-12', 'Bandung', '022-7298644');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
