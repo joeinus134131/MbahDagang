@@ -93,14 +93,41 @@ th {
 .data-table tbody td:empty {
   background-color: #ffcccc;
 }
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #343d44;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active{
+  background-color: #04AA6D;
+ }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 a:visited{
-  text-decoration: underline;
+  color: #ffffff;
   color: #60daff;
   }
 a:hover{
   text-decoration: solid;
   font-weight: bold;
-  }
-a:active{
-  background-color: yellow;
   }
