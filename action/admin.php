@@ -31,9 +31,9 @@ $result = mysqli_query($conn, 'SELECT * FROM barang');
 </header>
 <body>
     <!-- Tombol tambah data -->
-    <!-- <form action="add.php" method="get"> -->
+    <form action="add.php" method="get">
         <button type="button" class="btn btn-outline-primary">Tambah Data</button>
-    <!-- </form>     -->
+    </form>    
     <table>
         <thead>
             <tr>
