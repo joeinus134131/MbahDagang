@@ -47,7 +47,6 @@ li {
 li a {
   display: block;
   padding: 8px;
-  background-color: #343d44;
 }
 
 li a:hover:not(.active) {

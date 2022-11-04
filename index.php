@@ -15,6 +15,7 @@
         </ul> 
     </nav>
 </header>
+<tr></tr>
 <body>
 	<div class="container">
 		<h2 class="text-info">Pencarian berdasarkan Nama Barang</h2>
