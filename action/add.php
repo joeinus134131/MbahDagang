@@ -4,6 +4,16 @@
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="http://localhost/MbahDagang/index.php">Home</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Cari</a></li>
+        </ul> 
+    </nav>
+</header>
 <body>
     <a href="admin.php">Kembali ke Admin Dashboard</a>
     <br/><br/>
