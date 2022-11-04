@@ -28,7 +28,7 @@ $result = mysqli_query($conn, 'SELECT * FROM barang');
 <body>
     <!-- Tombol tambah data -->
     <form action="add.php" method="get">
-        <button type="button" class="btn btn-outline-primary">Tambah Data</button>
+        <button onclick="location.href= 'add.php';" id="myButton" type="button" class="btn btn-outline-primary" >Tambah Data</button>
     </form>    
     <table>
         <thead>
