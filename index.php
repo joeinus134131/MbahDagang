@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
 </head>
 <header>
-    <nav>
+	<nav>
         <ul>
             <li><a href="http://localhost/MbahDagang/index.php">Home</a></li>
             <li><a href="#">Kontak</a></li>
@@ -28,14 +28,19 @@
 		<?php 	
 			if(isset($_POST['cari'])){
 				$cari  = $_POST['cari'];
-				$data  = mysqli_query($conn, "SELECT * FROM barang WHERE nama_barang LIKE '%$cari%' "); 
+				$data  = mysqli_query($conn, "SELECT * FROM barang WHERE nama_barang LIKE '%$cari%'");
+				$jumlah = mysqli_query($conn, "SELECT COUNT(*) FROM barang WHERE nama_barang LIKE '%$cari%'");
 			}else{
 				$data  = mysqli_query($conn, "SELECT * FROM barang");
+				$jumlah = mysqli_query($conn, "SELECT COUNT(*) FROM barang");
 			}
 		?>
-		<a href="login.php">Masuk Admin</a>
+		<form action="add.php" method="get">
+        	<button onclick="location.href= 'action/admin.php';" id="myButton" type="button" class="btn btn-primary">Masuk Admin</button>
+    	</form>
+		<tr> </tr>
 		<table>
-			<thead class="thead-dark">
+			<thead>
 				<tr>
 					<th>ID Barang</th>
 					<th>Kategori</th>

@@ -65,7 +65,11 @@ ul {
   background-color: #333;
   position: fixed;
   top: 0;
-  width: 100%;
+  /* width: 100%; */
+}
+nav {
+  width: fit-content;
+  margin-left: 0px;
 }
 
 a:visited{
@@ -76,3 +80,7 @@ a:hover{
   text-decoration: solid;
   font-weight: bold;
   }
+
+thead {
+  background-color: blue;
+}

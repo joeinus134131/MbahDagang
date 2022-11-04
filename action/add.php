@@ -17,9 +17,7 @@
     </nav>
 </header>
 <body>
-    <a href="admin.php">Kembali ke Admin Dashboard</a>
     <br/><br/>
- 
     <form action="add.php" method="post" name="form1">
         <table width="50%">
             <tr> 

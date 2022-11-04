@@ -54,9 +54,7 @@ while($row = mysqli_fetch_array($result))
     </nav>
 </header>
 <body>
-    <a href="admin.php">Home</a>
     <br/><br/>
-    
     <form name="update_user" method="post" action="edit.php">
         <table>
             <tr> 
