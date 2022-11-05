@@ -31,6 +31,8 @@
 				$cari  = $_POST['cari'];
 				$data  = mysqli_query($conn, "SELECT * FROM barang WHERE nama_barang LIKE '%$cari%'");
 				$jumlah = mysqli_query($conn, "SELECT COUNT(*) FROM barang WHERE nama_barang LIKE '%$cari%'");
+				$jumlah = mysqli_fetch_array($jumlah);
+				echo "<h3 class='text-info'>Hasil pencarian : ".$jumlah[0]."</h3>";
 			}else{
 				$data  = mysqli_query($conn, "SELECT * FROM barang");
 				$jumlah = mysqli_query($conn, "SELECT COUNT(*) FROM barang");
