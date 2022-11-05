@@ -23,10 +23,13 @@ div {
 }
 table {
     border: #353535;
-    margin: auto;
     font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
     font-size: 20px;
+    width: auto;
   }
+thead {
+  width: 80%;
+}
  
 h1 {
     margin: 25px auto 0;
