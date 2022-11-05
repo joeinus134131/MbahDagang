@@ -23,6 +23,7 @@ div {
 }
 table {
     border: #353535;
+    margin: 90px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
     font-size: 20px;
     width: auto;
