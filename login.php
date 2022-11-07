@@ -5,19 +5,19 @@
     session_start();
  
     if (isset($_SESSION['username'])) {
-        header("Location: admin.php");
+        header("Location: action/admin.php");
     }
     
     if (isset($_POST['submit'])) {
-        $email = $_POST['email'];
+        $username = $_POST['username'];
         $password = md5($_POST['password']);
     
-        $sql = "SELECT * FROM user WHERE email='$username' AND password='$password'";
+        $sql = "SELECT * FROM user WHERE username='$username' AND password='$password'";
         $result = mysqli_query($conn, $sql);
         if ($result->num_rows > 0) {
             $row = mysqli_fetch_assoc($result);
             $_SESSION['username'] = $row['username'];
-            header("Location: admin.php");
+            header("Location: action/admin.php");
         } else {
             echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
         }
@@ -41,22 +41,6 @@
         </nav>
     </header>
     <body>
-        <!-- <form  name="login" method="get" action="login.php">
-            <fieldset>
-                <legend>Login Admin</legend>
-                <tr> 
-                    <td>Username</td>
-                    <td><input type="text" name="username"></td>
-                </tr>
-                <tr> 
-                    <td>Password</td>
-                    <td><input type="text" name="password"></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" name="login" value="login"></td>
-                </tr>
-            </fieldset>
-        </form> -->
             <div>
             <div class="row">
             <!-- left column -->
@@ -72,12 +56,13 @@
                     <div class="card-body">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Username</label>
-                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" value="<?php echo $email; ?>" placeholder="Enter email">
+                        <input type="email" name="username" class="form-control" id="exampleInputEmail1" value="<?php echo $username; ?>" placeholder="Masukan username">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
                         <input type="password" name="password" class="form-control" id="exampleInputPassword1"  value="<?php echo $_POST['password']; ?>" placeholder="Password">
                     </div>
+                    <!-- validation method -->
                     <div class="form-group mb-0">
                         <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="terms" class="custom-control-input" id="exampleCheck1">
@@ -102,6 +87,7 @@
             </div>
             <!-- /.row -->
         </div><!-- /.container-fluid -->
+        
         <script>
             $(function () {
             $.validator.setDefaults({
