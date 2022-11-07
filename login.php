@@ -1,5 +1,27 @@
 <?php
     include_once("koneksi.php");
+    error_reporting(0);
+ 
+    session_start();
+ 
+    if (isset($_SESSION['username'])) {
+        header("Location: admin.php");
+    }
+    
+    if (isset($_POST['submit'])) {
+        $email = $_POST['email'];
+        $password = md5($_POST['password']);
+    
+        $sql = "SELECT * FROM user WHERE email='$username' AND password='$password'";
+        $result = mysqli_query($conn, $sql);
+        if ($result->num_rows > 0) {
+            $row = mysqli_fetch_assoc($result);
+            $_SESSION['username'] = $row['username'];
+            header("Location: admin.php");
+        } else {
+            echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
+        }
+    }
 ?>
 <html>
     <head>
@@ -35,8 +57,7 @@
                 </tr>
             </fieldset>
         </form> -->
-        <section class="content">
-            <div class="container-fluid">
+            <div>
             <div class="row">
             <!-- left column -->
             <div class="col-md-12">
@@ -51,11 +72,11 @@
                     <div class="card-body">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Username</label>
-                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" value="<?php echo $email; ?>" placeholder="Enter email">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1"  value="<?php echo $_POST['password']; ?>" placeholder="Password">
                     </div>
                     <div class="form-group mb-0">
                         <div class="custom-control custom-checkbox">
@@ -81,53 +102,51 @@
             </div>
             <!-- /.row -->
         </div><!-- /.container-fluid -->
-        </section>
-        <!-- Page specific script -->
-<script>
-$(function () {
-  $.validator.setDefaults({
-    submitHandler: function () {
-      alert( "Form successful submitted!" );
-    }
-  });
-  $('#quickForm').validate({
-    rules: {
-      email: {
-        required: true,
-        email: true,
-      },
-      password: {
-        required: true,
-        minlength: 5
-      },
-      terms: {
-        required: true
-      },
-    },
-    messages: {
-      email: {
-        required: "Please enter a email address",
-        email: "Please enter a valid email address"
-      },
-      password: {
-        required: "Please provide a password",
-        minlength: "Your password must be at least 5 characters long"
-      },
-      terms: "Please accept our terms"
-    },
-    errorElement: 'span',
-    errorPlacement: function (error, element) {
-      error.addClass('invalid-feedback');
-      element.closest('.form-group').append(error);
-    },
-    highlight: function (element, errorClass, validClass) {
-      $(element).addClass('is-invalid');
-    },
-    unhighlight: function (element, errorClass, validClass) {
-      $(element).removeClass('is-invalid');
-    }
-  });
-});
-</script>
+        <script>
+            $(function () {
+            $.validator.setDefaults({
+                submitHandler: function () {
+                alert( "Form successful submitted!" );
+                }
+            });
+            $('#quickForm').validate({
+                rules: {
+                email: {
+                    required: true,
+                    email: true,
+                },
+                password: {
+                    required: true,
+                    minlength: 5
+                },
+                terms: {
+                    required: true
+                },
+                },
+                messages: {
+                email: {
+                    required: "Please enter a email address",
+                    email: "Please enter a valid email address"
+                },
+                password: {
+                    required: "Please provide a password",
+                    minlength: "Your password must be at least 5 characters long"
+                },
+                terms: "Please accept our terms"
+                },
+                errorElement: 'span',
+                errorPlacement: function (error, element) {
+                error.addClass('invalid-feedback');
+                element.closest('.form-group').append(error);
+                },
+                highlight: function (element, errorClass, validClass) {
+                $(element).addClass('is-invalid');
+                },
+                unhighlight: function (element, errorClass, validClass) {
+                $(element).removeClass('is-invalid');
+                }
+            });
+            });
+        </script>
     </body>
 </html>
