@@ -39,7 +39,7 @@
 			}
 		?>
 		<form action="add.php" method="get">
-        	<button onclick="location.href= 'action/admin.php';" id="myButton" type="button" class="btn btn-primary">Masuk Admin</button>
+        	<button onclick="location.href= 'login.php';" id="myButton" type="button" class="btn btn-primary">Masuk Admin</button>
     	</form>
 		<tr> </tr>
 		<table>
@@ -68,7 +68,10 @@
 				<td colspan="6"><h3 class="text-danger text-center">Data Tidak Ditemukan</h3></td>
 			</tr>
 			<?php } ?>	
-		</table>	
+		</table>
+		<div>
+			<a href="cetak.php">Cetak PDF</a>
+		</div>	
 	</div> 
 </body>
 </html>
