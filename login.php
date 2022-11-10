@@ -11,10 +11,10 @@ if (isset($_SESSION['username'])) {
 }
  
 if (isset($_POST['submit'])) {
-    $username = $_POST['username'];
+    $email = $_POST['email'];
     $password = md5($_POST['password']);
  
-    $sql = "SELECT * FROM user WHERE username='$username' AND password='$password'";
+    $sql = "SELECT * FROM admin WHERE email='$email' AND password='$password'";
     $result = mysqli_query($conn, $sql);
     if ($result->num_rows > 0) {
         $row = mysqli_fetch_assoc($result);
@@ -43,7 +43,6 @@ if (isset($_POST['submit'])) {
     <div class="alert alert-warning" role="alert">
         <?php echo $_SESSION['error']?>
     </div>
- 
     <div class="container">
         <form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>

@@ -16,6 +16,7 @@
             </ul> s
         </nav>
 </header>
+<div>
     <?php 
 		include 'koneksi2.php';
         $data  = mysqli_query($conn, "SELECT * FROM barang");  
@@ -47,6 +48,7 @@
 		</tr>
 		<?php } ?>	
 	</table>
+</div>
 <script>
     window.print();
 </script>

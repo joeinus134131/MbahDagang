@@ -1,9 +1,9 @@
 <?php
-// memanggil koneksi ke database
-include_once("koneksi2.php");
- 
-// ambil semua data dari tabel barang
-$result = mysqli_query($conn, 'SELECT * FROM barang');
+    // memanggil koneksi ke database
+    include_once("koneksi2.php");
+    
+    // ambil semua data dari tabel barang
+    $result = mysqli_query($conn, 'SELECT * FROM barang');
 ?>
  
 <html>
