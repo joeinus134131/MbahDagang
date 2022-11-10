@@ -21,7 +21,7 @@ $result = mysqli_query($conn, 'SELECT * FROM barang');
             <li><a href="http://localhost/MbahDagang/index.php">Home</a></li>
             <li><a href="#">Kontak</a></li>
             <li><a href="#">Tentang</a></li>
-            <li><a href="#">Cari</a></li>
+            <li><a href="http://localhost/MbahDagang/logout.php">Logout</a></li>
         </ul> 
     </nav>
 </header>

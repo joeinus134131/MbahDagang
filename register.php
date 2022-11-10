@@ -1,11 +1,3 @@
-<?php
-$username = $_POST["username"];
-$password = $_POST["password"];
-$email = $_POST["email"];
-
-echo "<h1>Anda sudah terdaftar sebagai ".$username."!</h1>";
-?>
-
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -15,7 +7,7 @@ echo "<h1>Anda sudah terdaftar sebagai ".$username."!</h1>";
     <body>
         <div class="container">
           <h1>Daftar</h1>
-            <form method="POST" action="action/admin.php">
+            <form method="POST" action="login.php">
 
                 <input type="hidden" name="tujuan" value="DAFTAR">
 

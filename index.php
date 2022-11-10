@@ -5,8 +5,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
 </head>
-<tr></tr>
-<body>
 <header>
 	<nav>
         <ul>
@@ -17,7 +15,8 @@
         </ul> 
     </nav>
 </header>
-	<div class="container">
+<body>
+	<div>
 		<h2 class="text-info">Pencarian berdasarkan Nama Barang</h2>
 		<form action="" method="POST">	
 			<input class="form-control" name="cari" id="cari" type="text" placeholder="cari nama barang .." > <br>
