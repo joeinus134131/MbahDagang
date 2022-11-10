@@ -45,6 +45,8 @@ h1 {
 td, tr{
   font-size: 20px;
   color: rgb(0, 0, 0);
+  width: 150px;
+  border: #111;
   }
 
 a {

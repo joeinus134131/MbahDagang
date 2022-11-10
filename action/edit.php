@@ -54,38 +54,40 @@ while($row = mysqli_fetch_array($result))
     </nav>
 </header>
 <body>
+<div>    
     <br/><br/>
-    <form name="update_user" method="post" action="edit.php">
-        <table>
-            <tr> 
-                <td>ID Barang</td>
-                <td><input type="text" name="id_barang" value=<?php echo $id_barang;?>></td>
-            </tr>
-            <tr> 
-                <td>Kategori</td>
-                <td><input type="text" name="categori" value=<?php echo $categori;?>></td>
-            </tr>
-            <tr> 
-                <td>Nama Barang</td>
-                <td><input type="text" name="nama_barang" value=<?php echo $nama_barang;?>></td>
-            </tr>
-            <tr> 
-                <td>Harga</td>
-                <td><input type="text" name="harga" value=<?php echo $harga;?>></td>
-            </tr>
-            <tr> 
-                <td>Stok</td>
-                <td><input type="text" name="stok" value=<?php echo $stok;?>></td>
-            </tr>
-            <tr> 
-                <td>Supplier</td>
-                <td><input type="text" name="supplier" value=<?php echo $supplier;?>></td>
-            </tr>
-            <tr>
-                <td><input type="hidden" name="id_barang" value=<?php echo $_GET['id_barang'];?>></td>
-                <td><input type="submit" name="update" value="Update"></td>
-            </tr>
-        </table>
-    </form>
+        <form name="update_user" method="post" action="edit.php">
+            <table>
+                <tr> 
+                    <td>ID Barang</td>
+                    <td><input type="text" name="id_barang" value=<?php echo $id_barang;?>></td>
+                </tr>
+                <tr> 
+                    <td>Kategori</td>
+                    <td><input type="text" name="categori" value=<?php echo $categori;?>></td>
+                </tr>
+                <tr> 
+                    <td>Nama Barang</td>
+                    <td><input type="text" name="nama_barang" value=<?php echo $nama_barang;?>></td>
+                </tr>
+                <tr> 
+                    <td>Harga</td>
+                    <td><input type="text" name="harga" value=<?php echo $harga;?>></td>
+                </tr>
+                <tr> 
+                    <td>Stok</td>
+                    <td><input type="text" name="stok" value=<?php echo $stok;?>></td>
+                </tr>
+                <tr> 
+                    <td>Supplier</td>
+                    <td><input type="text" name="supplier" value=<?php echo $supplier;?>></td>
+                </tr>
+                <tr>
+                    <td><input type="hidden" name="id_barang" value=<?php echo $_GET['id_barang'];?>></td>
+                    <td><input type="submit" name="update" value="Update"></td>
+                </tr>
+            </table>
+        </form>
+</div>
 </body>
 </html>
