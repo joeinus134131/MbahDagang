@@ -69,7 +69,8 @@
             // cek apakah data inputnya valid
             echo($id_barang);
             if($id_barang == ""){
-                echo "Data tidak boleh kosong";
+                // echo "Data tidak boleh kosong";
+                echo "<script>alert('Data tidak boleh kosong')</script>";
             }else{
                 // hasil Masukan data ke database
                 $result = mysqli_query($conn, "INSERT INTO barang(id_barang, categori, nama_barang, harga, stok, supplier) VALUES('$id_barang','$categori','$nama_barang', '$harga','$stok','$supplier')");
