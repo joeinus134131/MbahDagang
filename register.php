@@ -1,6 +1,6 @@
 <?php 
  
-include 'koneksi.php';
+include 'action/koneksi.php';
  
 error_reporting(0);
  

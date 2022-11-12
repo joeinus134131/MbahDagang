@@ -25,7 +25,7 @@
 					<input class="form-control" type="submit" value="Cari"> <br>
 				</form>
 				<?php 
-					include 'koneksi.php';  
+					include 'action/koneksi.php';  
 				?>
 				<?php 	
 					if(isset($_POST['cari'])){

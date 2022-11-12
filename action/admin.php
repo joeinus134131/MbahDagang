@@ -1,6 +1,6 @@
 <?php
     // memanggil koneksi ke database
-    include_once("koneksi2.php");
+    include_once("koneksi.php");
     
     // ambil semua data dari tabel barang
     $result = mysqli_query($conn, 'SELECT * FROM barang');
@@ -39,6 +39,7 @@
                 <th>Harga</th>
                 <th>Stok</th>
                 <th>Supplier</th>
+                <th>Waktu</th>
             </tr>
         </thead>
         <?php  
@@ -49,7 +50,8 @@
             echo "<td>".$row['nama_barang']."</td>";
             echo "<td>".$row['harga']."</td>"; 
             echo "<td>".$row['stok']."</td>";
-            echo "<td>".$row['supplier']."</td>";      
+            echo "<td>".$row['supplier']."</td>";    
+            echo "<td>".$row['created_at']."</td>";  
             echo "<td><a href='edit.php?id_barang=$row[id_barang]'>Edit</a> | <a href='delete.php?id_barang=$row[id_barang]'>Delete</a></td></tr>";        
         }
         ?>

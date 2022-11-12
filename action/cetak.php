@@ -18,7 +18,7 @@
 </header>
 <div>
     <?php 
-		include 'koneksi2.php';
+		include 'koneksi.php';
         $data  = mysqli_query($conn, "SELECT * FROM barang");  
 	?>
     <table>

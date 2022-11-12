@@ -64,7 +64,7 @@
             $supplier = $_POST['supplier'];
             
             // masukan koneksi ke database
-            include_once("koneksi2.php");
+            include_once("koneksi.php");
                     
             // cek apakah data inputnya valid
             echo($id_barang);

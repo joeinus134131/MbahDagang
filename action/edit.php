@@ -1,6 +1,6 @@
 <?php
 // include database connection file
-include_once("koneksi2.php");
+include_once("koneksi.php");
  
 // update data
 if(isset($_POST['update']))
