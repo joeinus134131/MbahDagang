@@ -43,7 +43,7 @@
 					<button onclick="location.href= 'login.php';" id="myButton" type="button" class="btn btn-primary">Masuk Admin</button>
 				</form>
 				<tr> </tr>
-				<table>
+				<table class="table table-striped table-hove">
 					<thead>
 						<tr>
 							<th>ID Barang</th>

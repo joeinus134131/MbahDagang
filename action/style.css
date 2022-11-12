@@ -15,7 +15,7 @@
   }
 body {
     font-size: 30px;
-    color: #343d44;
+    color: #ffffff;
     font-family: "segoe-ui", "open-sans", tahoma, arial;
     padding: 10px;
     margin: 10px;
@@ -25,7 +25,7 @@ div {
   margin: 10px;
 }
 table {
-    border: #353535;
+    border: #ffffff;
     margin: auto;
     font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
     font-size: 20px;
@@ -82,7 +82,7 @@ ul {
 }
 nav {
   width: fit-content;
-  margin-left: 0px;
+  margin-left: 10px;
 }
 
 a:visited{
@@ -228,7 +228,6 @@ padding-bottom: 20px;
 .login-register-text a {
     text-decoration: none;
     color: #6c5ce7;
-}ing: 40px 30px;
 }
  
 .container-logout .login-email .input-group .btn {
@@ -265,4 +264,5 @@ padding-bottom: 20px;
     background: #FFF;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,.3);
-    padd
+    padding: 40px 30px;
+  }

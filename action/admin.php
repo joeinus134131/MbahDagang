@@ -30,7 +30,7 @@
     <form action="add.php" method="get">
         <button onclick="location.href= 'add.php';" id="myButton" type="button" class="btn btn-outline-primary" >Tambah Data</button>
     </form>    
-    <table>
+    <table class="table table-striped table-hove">
         <thead>
             <tr>
                 <th>ID Barang</th> 
