@@ -10,9 +10,13 @@
 		<nav>
 			<ul>
 				<li><a href="http://localhost/MbahDagang/index.php">Home</a></li>
-				<li><a href="#">Kontak</a></li>
+				<li><a href="galeri.php">Galeri Barang</a></li>
 				<li><a href="#">Tentang</a></li>
 				<li><a href="#">Cari</a></li>
+				<label class="switch">
+					<input type="checkbox" id="input">
+					<span class="slider"></span>
+				</label>
 			</ul> 
 		</nav>
 	</header>
@@ -44,7 +48,7 @@
 				</form>
 				<tr> </tr>
 				<table class="table table-striped table-hove">
-					<thead>
+					<thead> 
 						<tr>
 							<th>ID Barang</th>
 							<th>Kategori</th>
@@ -76,5 +80,12 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		var input = document.getElementById('input');
+		input.addEventListener('click', function(){
+			document.body.classList.toggle('dark');
+		});
+	</script>
+	<!-- <script src="script.js"></script> -->
 </body>
 </html>

@@ -45,7 +45,7 @@
         <?php echo $_SESSION['error']?>
     </div>
     <div class="container">
-        <form action="login.php" method="POST" class="login-email">
+        <form action="action/admin.php" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
             <div class="input-group">
                 <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
