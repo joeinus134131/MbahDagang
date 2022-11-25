@@ -27,13 +27,14 @@ div {
   padding: 10px;
   margin: 10px;
 }
-table {
+.table {
     border: #ffffff;
     margin: auto;
     font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
     font-size: 20px;
     width: auto;
   }
+
 thead {
   width: 80%;
 }
@@ -48,7 +49,7 @@ h1 {
 td, tr{
   font-size: 20px;
   color: rgb(0, 0, 0);
-  width: 150px;
+  /* width: 200px; */
   border: #111;
   }
 

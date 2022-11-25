@@ -39,7 +39,7 @@
                 </div>
                 <div class="col">
                     <div class="wrapper">
-                        <img src="asset/img/gambar1.png" alt="booklist" />
+                        <img src="asset/img/gambar5.png" alt="booklist" />
                     </div>
                 </div>
                 <div class="col">

@@ -57,7 +57,7 @@ while($row = mysqli_fetch_array($result))
 <div>    
     <br/><br/>
         <form name="update_user" method="post" action="edit.php">
-            <table>
+            <table lass="table">
                 <tr> 
                     <td>ID Barang</td>
                     <td><input type="text" name="id_barang" value=<?php echo $id_barang;?>></td>
